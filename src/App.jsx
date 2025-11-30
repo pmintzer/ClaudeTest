@@ -1095,27 +1095,27 @@ const PASRRDashboard = () => {
       )}
 
       {/* Instruction Panel */}
-      <div className="bg-blue-50 p-4 border-t border-blue-200">
+      <div className="bg-blue-50 p-3 border-t border-blue-200 max-h-40 overflow-y-auto">
         <div className="flex items-start">
-          <Info size={20} className="text-blue-500 mr-2 mt-1" />
+          <Info size={16} className="text-blue-500 mr-2 mt-1 flex-shrink-0" />
           <div>
-            <h3 className="font-medium text-blue-900">PASRR Compliance Status Updates</h3>
-            <p className="text-blue-800 text-sm mt-1">
+            <h3 className="font-medium text-blue-900 text-sm">PASRR Compliance Status Updates</h3>
+            <p className="text-blue-800 text-xs mt-1">
               The following compliance status changes are implemented:
             </p>
-            <ul className="text-blue-800 text-sm mt-2 list-disc pl-5">
+            <ul className="text-blue-800 text-xs mt-2 list-disc pl-5 space-y-1">
               <li><strong>PASRR Compliance</strong> - When no form is selected, the status shows as "Awaiting Form Association" with a yellow background</li>
               <li><strong>7000/PAS Compliance</strong> - When no form is selected, this status is blank</li>
               <li><strong>AI Scan Compliance</strong> - Only appears for 7000 forms. Click to open detailed validation results with page-by-page verification</li>
               <li><strong>Interactive AI Scan</strong> - Shows risk scores, verified requirements, and allows page-level review of compliance issues</li>
               <li><strong>Document Type Toggle</strong> - Clicking cycles through these options:</li>
-              <ul className="ml-4 mt-1">
+              <ul className="ml-4 mt-1 space-y-1">
                 <li><strong>Select a Form</strong>: PASRR = "Awaiting Form Association" (Yellow), 7000/PAS = blank, AI Scan = blank, RR = blank</li>
                 <li><strong>7000</strong>: PASRR = "Not Compliant" (Red), 7000/PAS = "Compliant" (Green), AI Scan = clickable status, RR = "RR Pending" (Orange)</li>
                 <li><strong>PAS</strong>: PASRR = "Compliant" (Green), 7000/PAS = "Compliant" (Green), AI Scan = blank, RR = blank</li>
               </ul>
             </ul>
-            <p className="text-blue-800 text-sm mt-2">
+            <p className="text-blue-800 text-xs mt-2">
               <strong>Try it:</strong> Click "Select a Form" to open the modal, choose from the dropdown, click "View" button to see the actual forms with sample data, and <strong>click any AI Scan compliance status</strong> to see detailed validation results with interactive verification features.
             </p>
           </div>
