@@ -22,7 +22,43 @@ An interactive prototype for an Ohio PASRR (Preadmission Screening and Resident 
 - Tailwind CSS (styling)
 - Lucide React (icons)
 
-## Getting Started
+## Live Demo
+
+The prototype is automatically deployed to GitHub Pages via GitHub Actions.
+
+🌐 **Live URL**: `https://pmintzer.github.io/ClaudeTest/`
+
+The deployment happens automatically when changes are pushed to the `claude/oh-pasrr-prototype-01UAHYMkBAdTMvmiQ9GVx5aJ` branch.
+
+## Deployment Setup
+
+### GitHub Pages Configuration
+
+This project is configured to deploy automatically to GitHub Pages using GitHub Actions:
+
+1. **GitHub Actions Workflow**: `.github/workflows/deploy.yml` handles the build and deployment
+2. **Automatic Deployment**: Pushes to the branch trigger automatic deployment
+3. **No Manual Steps**: Everything is automated!
+
+### First-Time Setup (Repository Owner)
+
+To enable GitHub Pages for this repository:
+
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Under "Build and deployment":
+   - Source: Select **GitHub Actions**
+4. The next push will trigger deployment automatically
+
+### Manual Deployment
+
+You can also trigger deployment manually:
+
+1. Go to **Actions** tab in GitHub
+2. Click on "Deploy to GitHub Pages" workflow
+3. Click **Run workflow** → **Run workflow**
+
+## Local Development
 
 ### Prerequisites
 
