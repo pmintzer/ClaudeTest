@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - claude/deploy-on-push-01WJcxumq1sTen2Cs9ucJ7mL
+      - claude/oh-pasrr-prototype-01UAHYMkBAdTMvmiQ9GVx5aJ
   workflow_dispatch:
 
 permissions:
@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
